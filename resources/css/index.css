@@ -90,6 +90,7 @@ strong {
   font-weight: 700;
   margin-top: 0.5em;
   text-decoration: none;
+  border: none;
 }
 
 .btn-primary {
@@ -373,4 +374,36 @@ strong {
   .main-text {
     grid-column: 3 / span 2;
   }
+
+  .secondary-text {
+    order: 2;
+  }
+}
+
+/* ==================
+    form
+===================== */
+
+.contact-form {
+  display: grid;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-bottom: 0.75em;
+  padding: 0.4em;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.btn-form {
+    justify-self: end;
 }
