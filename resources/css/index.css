@@ -24,6 +24,24 @@ strong {
   color: #ffe600;
 }
 
+.page-title,
+.subtitle {
+  grid-column: 2 / -2;
+  text-align: center;
+  color: #000;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  margin: 0.5em auto 3em;
+  font-size: 1.125rem;
+  max-width: 650px;
+}
+
 .hero-title {
   font-size: 1.5rem;
   line-height: 1.4;
@@ -34,6 +52,10 @@ strong {
   font-size: 1.125rem;
   color: #000;
   margin-top: 1.25em;
+}
+
+.section-title:first-child {
+  margin-top: 0;
 }
 
 /* buttons */
@@ -250,7 +272,7 @@ strong {
 ===================== */
 
 .hero {
-  background-image: url("/resources/images/hero-bg.jpg");
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: bottom;
   padding: 8em 0 4em;
@@ -297,5 +319,32 @@ strong {
 
   .col:first-child {
     grid-column: 2 / span 1;
+  }
+}
+
+/* ==================
+    template page
+===================== */
+
+.main-template {
+  padding: 4em 0;
+}
+
+.main-template > * {
+  grid-column: 2 / -2;
+}
+
+.main-image {
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .main-image {
+    grid-column: 2;
+  }
+
+  .main-text {
+    grid-column: 3 / span 2;
   }
 }
